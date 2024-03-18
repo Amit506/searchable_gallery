@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
 
       ],
       child: MaterialApp(
-       theme: FlexThemeData.light(scheme: FlexScheme.mandyRed),
+       theme: FlexThemeData.light(scheme: FlexScheme.aquaBlue),
         // The Mandy red, dark theme.
         darkTheme: FlexThemeData.dark(scheme: FlexScheme.mandyRed),
         home: const HomePage(),

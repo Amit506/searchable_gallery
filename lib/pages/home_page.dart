@@ -23,8 +23,12 @@ class _HomePageState extends State<HomePage>  with AutomaticKeepAliveClientMixin
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Staggered Grid View'),
+        title: const Text('Gallery'),
+        actions: const [IconButton(
+          onPressed: null,
+          icon: Icon(Icons.image_search_rounded))],
       ),
+      floatingActionButton: const FloatingActionButton(onPressed: null,child: Icon(Icons.search) ,),
       body: Consumer<FileProvider>(
         builder: (context, fileProvider, child) {
           final files = fileProvider.files;
